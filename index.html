@@ -1,88 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Awareness</title>
 
-<title>Phishing Awareness Lab</title>
+    <style>
+        body {
+            background: #0f172a;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px 20px;
+        }
 
-<style>
-body {
-    background: #0f172a;
-    color: white;
-    font-family: Arial;
-    text-align: center;
-    padding: 40px 15px;
-}
+        .card {
+            background: #1e293b;
+            max-width: 450px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px #0ea5e9;
+        }
 
-.card {
-    background: #1e293b;
-    max-width: 400px;
-    margin: auto;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px #38bdf8;
-}
+        h1 {
+            color: #38bdf8;
+        }
 
-input {
-    width: 90%;
-    padding: 12px;
-    margin: 10px;
-    border-radius: 6px;
-    border: none;
-}
+        button {
+            background: #0ea5e9;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
 
-button {
-    background: #0ea5e9;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 7px;
-    cursor: pointer;
-}
+        button:hover {
+            background: #0284c7;
+        }
 
-#result {
-    margin-top: 20px;
-}
-</style>
+        #result {
+            margin-top: 20px;
+            color: #facc15;
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="card">
+    <div class="card">
+        <h1>🛡️ Cybersecurity Awareness</h1>
 
-<h1>Security Awareness Lab</h1>
+        <p>Learn how suspicious links can put your personal information at risk.</p>
 
-<p>Demonstration of how fake pages can deceive users.</p>
+        <button onclick="demo()">Start Simulation</button>
 
-<input type="text" placeholder="Demo username">
+        <div id="result"></div>
+    </div>
 
-<input type="password" placeholder="Demo password">
-
-<button onclick="simulation()">Continue</button>
-
-<div id="result"></div>
-
-</div>
-
-<script>
-
-function simulation() {
-
-    document.getElementById("result").innerHTML = `
-    <h2 style="color:#facc15">⚠ Simulation!</h2>
-
-    <p>This was a cybersecurity demonstration.</p>
-
-    <p>Real phishing pages may attempt to steal
-    credentials or personal information.</p>
-
-    <p><b>Never enter passwords into untrusted links.</b></p>
-    `;
-
-}
-
-</script>
+    <script>
+        function demo() {
+            document.getElementById("result").innerHTML =
+                "<h2>Simulation Completed!</h2>" +
+                "<p>Always verify links before opening them.</p>" +
+                "<p>Never share passwords or OTPs with suspicious websites.</p>";
+        }
+    </script>
 
 </body>
 </html>
